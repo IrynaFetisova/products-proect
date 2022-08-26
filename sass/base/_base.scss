@@ -1,0 +1,68 @@
+ul,
+p,
+h2 {
+  @extend %reset;
+}
+
+.list {
+  @extend %reset;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+ @media screen and (min-width: 480px) {
+  width: 480px;
+ }
+
+ @media screen and (min-width: 768px) {
+  width: 768px;
+ }
+
+ @media screen and (min-width: 1200px) {
+  width: 1200px;
+ }
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+   }
+}
+
+.section__title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: $title-tex-color;
+  @include FontW(700,36px);
+  line-height: 1.2;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    width: 1170px;
+   }
+}
+
+.section__images {
+  padding-top: 0px;
+}
+
+.section__workers {
+  background-color: #f5f4fa;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
